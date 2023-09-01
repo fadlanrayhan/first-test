@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      
+      *{
+        font-family: "Poppins", sans-serif;
+      }
+      
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .btn-primary {
+        background-color: #EC53B0 !important;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #9D44C0 !important;
+        border: none;
+      }
+
+      @media(max-width: 932px){
+        .hidden{
+          display: none !important;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="row m-0 h-100">
+
+      <div class="col d-flex justify-content-center align-items-center hidden">
+        <img src="images/poto-login.svg" class="w-50 h-50" alt="Image Icon">
+      </div>
+
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <form class="w-75">
+          <h3 class="text-center mb-4">Masuk ke Akunmu</h3>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+          <div class="text-center mt-3">
+            <a href="registrasi.html" class="text-decoration-none">Registrasi</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

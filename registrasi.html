@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regristasi</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      
+      *{
+        font-family: "Poppins", sans-serif;
+      }
+      
+      body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+      }
+
+      .btn-primary {
+        background-color: #EC53B0 !important;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #9D44C0 !important;
+        border: none;
+      }
+
+      @media(max-width: 932px){
+        .hidden{
+          display: none !important;
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="row m-0 h-100">
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <form class="w-75">
+          <h3 class="text-center mb-4">Registrasi</h3>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nama</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Email</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <button class="btn btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        </form>
+      </div>
+
+      <div class="col d-flex justify-content-center align-items-center hidden">
+        <img src="images/poto-login.svg" class="w-50 h-50" alt="Image Icon">
+      </div>
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Yakin Bang??</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Kalo nanti salah, lu gabisa login lagi ya bang. Tolong pastiin semuanya uda benar dan ingat.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Gak yakin</button>
+        <button type="button" class="btn btn-primary">Yakin</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
